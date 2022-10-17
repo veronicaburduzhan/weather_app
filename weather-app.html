@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="weather-app.css"
+    />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Let's talk about weather</h1>
+      </header>
+      <main>
+        <section class="search-field">
+          <div class="search">
+            <input
+              id="cityInput"
+              type="text"
+              class="input-field"
+              placeholder="Enter city"
+            />
+            <button id="weatherBtn" class="btn">Search</button>
+          </div>
+          <div class="position-setting">
+            <button id="currentPosition" class="btn">Current position</button>
+          </div>
+        </section>
+        <div class="main-data">
+          <section class="weather-data">
+            <p id="todayDate"></p>
+            <p id="cityName"></p>
+            <div class="temp">
+              <img id="icon" src="" />
+              <p id="temp"></p>
+            </div>
+            <div class="extra-temp-info">
+              <p id="tempFeelsLike"></p>
+            </div>
+            <div class="extra-weather-info">
+              <div>
+                <p id="windSpeed"></p>
+                <p id="cloudy"></p>
+              </div>
+              <div class="sun">
+                <p id="sunrise"></p>
+                <p id="sunset"></p>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div id="map">
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIz8NiQXOLrmM4XKv8SciALphV5Vrs76g"
+    ></script>
+    <script src="weather-app.js"></script>
+  </body>
+</html>
